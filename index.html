@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="planting.css">
+        <title></title>
+    </head>
+	<article>
+    <header>
+        <header>
+			<div class="header1">
+				<a href="index.html">home</a>
+				<a href="memberregistration.html">membership registration</a>
+				<a href="donate.html">Donate</a>
+				<a href="memberslist.html">Our members</a>
+				<a href="about.html">About us</a>
+			</div>
+			<div class="header2">
+				<div class="sub_header">
+					<div class="sub1">
+						<img src="images\page1-1200px-Plant-for-the-planet-logo.pdf.jpg" width="100" height="100">
+					</div>
+
+					<div class="sub2">
+						<h1>Welcome to jillsmith tree planting organization</h1>
+						<h4>Trees planted=5million</h4>
+						<h4>Target=30million</h4>
+					</div>
+				</div>
+
+				<div class="header3">
+
+		</header>
+    </header>
+    <main>
+		
+	</main>
+        <body>
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 3</div>
+				  <img src="images\togo-wawa_0.jpeg" style="width:100%">
+				  <div class="text">our tree nurseries</div>
+				</div>
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 3</div>
+				  <img src="images\dsc_4923-ouezanne_0.jpg" style="width:100%">
+				  <div class="text">planted trees</div>
+				</div>
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 3</div>
+				  <img src="images\microsoftteams-image_2_0_0.png" style="width:100%">
+				  <div class="text">planting activities</div>
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			  </div>
+			  <br>
+			  <div style="text-align:center">
+				<span class="dot" onclick="currentSlide(0)"></span>
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+			  </div>
+			  <script>
+				let slideIndex = 0;
+				let timeoutId = null;
+				const slides = document.getElementsByClassName("mySlides");
+				const dots = document.getElementsByClassName("dot");
+				
+				showSlides();
+				function currentSlide(index) {
+					 slideIndex = index;
+					 showSlides();
+				}
+			   function plusSlides(step) {
+				  
+				  if(step < 0) {
+					  slideIndex -= 2;
+					  
+					  if(slideIndex < 0) {
+						slideIndex = slides.length - 1;
+					  }
+				  }
+				  
+				  showSlides();
+			   }
+				function showSlides() {
+				  for(let i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+					dots[i].classList.remove('active');
+				  }
+				  slideIndex++;
+				  if(slideIndex > slides.length) {
+					slideIndex = 1
+				  }
+				  slides[slideIndex - 1].style.display = "block";
+				  dots[slideIndex - 1].classList.add('active');
+				   if(timeoutId) {
+					  clearTimeout(timeoutId);
+				   }
+				  timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
+				}
+			  </script>
+        </body>
+		<footer>
+    <!-- Footer -->
+    <footer class="page-footer">
+    
+    	<!-- Contact Us -->
+        <div class="contact">
+        	<div class="container">
+				<h2 class="section-heading">Contact Us</h2>
+				<p><span class="glyphicon glyphicon-earphone"></span><br> +254 799661234</p>
+				<p><span class="glyphicon glyphicon-envelope"></span><br> jillolale@gmail.com</p>
+        	</div>
+        </div>
+        	
+        <!-- Copyright etc -->
+        <div class="small-print">
+        	<div class="container">
+        		<p>Copyright &copy; jillolale@gmail.com 2022</p>
+        	</div>
+        </div>
+        
+    </footer>
+		</footer>
+	</article>
+
+	</html>

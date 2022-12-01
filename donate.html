@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="planting.css">
+        <title></title>
+    </head>
+   
+          <header>
+        <header>
+			<div class="header1">
+				<a href="index.html">home</a>
+				<a href="memberregistration.html">membership registration</a>
+				<a href="donate.html">Donate</a>
+				<a href="memberslist.html">our members</a>
+				<a href="about.html">About us</a>
+			</div>
+			<div class="header2">
+				<div class="sub_header">
+					<div class="sub1">
+						<img src="images\page1-1200px-Plant-for-the-planet-logo.pdf.jpg" width="100" height="100">
+					</div>
+
+					<div class="sub2">
+						<h1>Welcome to jillsmith tree planting organization</h1>
+					</div>
+				</div>
+
+				<div class="header3">
+
+		</header>
+    </header>
+    <main></main>
+    <body>
+      <h2>Donation Form</h2>
+
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Donate</button>
+      
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="index.html">
+          <div class="container">
+            <h1>Donation Form</h1>
+            <p>Thank you for your interest to support us.Please fill the form below </p>
+            <hr>
+            <label for="text"><b>Full Name</b></label>
+            <input type="text" placeholder="Enter name" name="name" required>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <label for="text"><b>Country</b></label>
+            <input type="text" placeholder="Enter Country" name="country" required>
+
+            <label for="text"><b>Gender</b></label><br>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <label for="text"><b>Amount to Donate</b></label><br>
+            <input type="amount" name="number" required><br>
+            <label for="text"><b>Date of donation (month and year)</b></label><br>
+            <input type="month" name="bdaymonth">
+<br>
+      
+            
+            
+            <p>By registering you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <button type="submit" class="signupbtn">Register</button>
+
+            </div>
+          </div>
+        </form>
+      </div>
+      
+      <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+      
+    </body>
+    <footer>
+        <!-- Footer -->
+    <footer class="page-footer">
+    
+    	<!-- Contact Us -->
+        <div class="contact">
+        	<div class="container">
+				<h2 class="section-heading">Contact Us</h2>
+				<p><span class="glyphicon glyphicon-earphone"></span><br> +254 799661234</p>
+				<p><span class="glyphicon glyphicon-envelope"></span><br> jillolale@gmail.com</p>
+        	</div>
+        </div>
+        	
+        <!-- Copyright etc -->
+        <div class="small-print">
+        	<div class="container">
+        		<p>Copyright &copy; jillolale@gmail.com 2022</p>
+        	</div>
+        </div>
+        
+    </footer>
+    </footer>
+    ></html>
